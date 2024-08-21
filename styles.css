@@ -1,0 +1,459 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff4a3a;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8em;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://thegeneral.store/cdn/shop/files/generalstore.jpg?v=1642261868') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.shop-now-btn {
+    background-color: #ff4a3a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #e63e31;
+}
+
+/* Products Section */
+.products-section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-bar select, .filter-bar input {
+    padding: 5px 10px;
+    font-size: 1em;
+}
+
+.product-listing {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5; /* Light grey background for the whole page */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #05a1b5; /* Dark grey for the header background */
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.cart-icon img {
+    width: 24px;
+    height: auto;
+}
+
+.cart-icon #cart-count {
+    background-color: #ff4a3a; /* Red for the cart count background */
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-weight: 700;
+}
+
+/* Hero section */
+.hero {
+    background-color: #333; /* Dark grey background for the hero section */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.shop-now-btn {
+    background-color: #ff4a3a; /* Red button color */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #e03a2d; /* Darker red on hover */
+}
+
+/* Products section */
+.products-section {
+    padding: 30px 20px;
+}
+
+.filter-bar {
+    margin-bottom: 20px;
+}
+
+.filter-bar select, .filter-bar input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Product card */
+.product-card {
+    width: 250px; /* Fixed width */
+    height: 350px; /* Fixed height */
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.product-card .price {
+    color: #ff4a3a;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.product-card button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #555;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Cart section */
+.cart-section {
+    background-color: white; /* White background for the cart section */
+    padding: 30px 20px;
+    margin: 20px 0;
+}
+
+.cart-section h2 {
+    margin-bottom: 20px;
+}
+
+.total {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.checkout-btn {
+    background-color: #ff4a3a; /* Red button color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #e03a2d; /* Darker red on hover */
+}
+
+/* Checkout section */
+.checkout-section {
+    background-color: white; /* White background for the checkout section */
+    padding: 30px 20px;
+    margin: 20px 0;
+}
+
+.checkout-section h2 {
+    margin-bottom: 20px;
+}
+
+.checkout-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkout-section input, .checkout-section select {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.place-order-btn {
+    background-color: #ff4a3a; /* Red button color */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.place-order-btn:hover {
+    background-color: #e03a2d; /* Darker red on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark grey background for the footer */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+/* Cart Section */
+.cart-section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.total {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.checkout-btn {
+    background-color: #ff4a3a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #e63e31;
+}
+
+/* Checkout Section */
+.checkout-section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.checkout-section form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.checkout-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.checkout-section input, .checkout-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.place-order-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.place-order-btn:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

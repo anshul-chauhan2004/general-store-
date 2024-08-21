@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">General Store</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+            <div class="cart-icon">
+                <a href="#cart"><img src="https://www.shutterstock.com/image-vector/shopping-cart-icon-flat-design-260nw-570153007.jpg" alt="Cart"></a>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Say hello to your new
+                online shopping and
+                delivery service!
+            </h1>
+            <p></p>
+            <a href="#products" class="shop-now-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <div class="filter-bar">
+            <label for="category">Category:</label>
+            <select id="category" onchange="filterProducts()">
+                <option value="all">All</option>
+                <option value="frozen">Frozen Food</option>
+                <option value="confectionary">Chocolate & Confectionery</option>
+                <option value="entertaining">Occasions & Entertaining</option>
+            </select>
+            <input type="text" id="search" placeholder="Search products..." oninput="filterProducts()">
+        </div>
+        <h2>Our Products</h2>
+        <div class="product-listing" id="product-listing">
+            <!-- Frozen Food Products -->
+            <div class="product-card" data-category="frozen">
+                <img src="https://thegeneral.store/cdn/shop/products/300x300_ea0ecc16-eefb-4161-99cc-63fe08d8b4e3_540x.jpg?v=1643477271" alt="Frozen Pizza">
+                <h3>Frozen Pizza</h3>
+                <p class="price">$5.99</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="frozen">
+                <img src="https://thegeneral.store/cdn/shop/products/300x300_2c8a7d21-2dd6-4f16-8c15-27a693b2c7f8_540x.jpg?v=1643477271" alt="Frozen Vegetables">
+                <h3>Frozen Vegetables</h3>
+                <p class="price">$2.99</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="frozen">
+                <img src="https://thegeneral.store/cdn/shop/products/300x300_e563f4d4-3fcf-481f-bf60-365ac4f1dd88_540x.jpg?v=1643477271" alt="Frozen Fish">
+                <h3>Frozen Fish</h3>
+                <p class="price">$8.99</p>
+                <button onclick="addToCart(3)">Add to Cart</button>
+            </div>
+
+            <!-- Chocolate & Confectionery Products -->
+            <div class="product-card" data-category="confectionary">
+                <img src="https://thegeneral.store/cdn/shop/products/300x300_0bb27f17-cb18-4b0a-8f8a-216df9a6e857_540x.jpg?v=1643477271" alt="Dark Chocolate">
+                <h3>Dark Chocolate</h3>
+                <p class="price">$3.50</p>
+                <button onclick="addToCart(4)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="confectionary">
+                <img src="https://thegeneral.store/cdn/shop/products/300x300_b1f4ec8b-91a5-4871-b2ea-69a4b58e8c95_540x.jpg?v=1643477271" alt="Candy Mix">
+                <h3>Candy Mix</h3>
+                <p class="price">$2.00</p>
+                <button onclick="addToCart(5)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="confectionary">
+                <img src="https://thegeneral.store/cdn/shop/products/300x300_0e3b702b-bd0f-45ff-b193-65bbfe91b2a3_540x.jpg?v=1643477271" alt="Chocolate Truffles">
+                <h3>Chocolate Truffles</h3>
+                <p class="price">$6.99</p>
+                <button onclick="addToCart(6)">Add to Cart</button>
+            </div>
+
+            <!-- Occasions & Entertaining Products -->
+            <div class="product-card" data-category="entertaining">
+                <img src="https://thegeneral.store/cdn/shop/products/300x300_d3e2cde2-0b80-4c64-8604-6d41b5e5b0a6_540x.jpg?v=1643477271" alt="Party Platter">
+                <h3>Party Platter</h3>
+                <p class="price">$24.99</p>
+                <button onclick="addToCart(7)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="entertaining">
+                <img src="https://thegeneral.store/cdn/shop/products/300x300_3cf4b9e7-fb7a-49b1-bc4a-5c0c865d7752_540x.jpg?v=1643477271" alt="Champagne">
+                <h3>Champagne</h3>
+                <p class="price">$45.00</p>
+                <button onclick="addToCart(8)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="entertaining">
+                <img src="https://thegeneral.store/cdn/shop/products/300x300_736d7e13-4bc1-43ee-bf78-51e275a53787_540x.jpg?v=1643477271" alt="Decorations Set">
+                <h3>Decorations Set</h3>
+                <p class="price">$12.50</p>
+                <button onclick="addToCart(9)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+        </div>
+        <p class="total">Total: $<span id="total">0.00</span></p>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </section>
+
+    <section id="checkout" class="checkout-section">
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment">
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <button type="submit" class="place-order-btn">Place Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 General Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
